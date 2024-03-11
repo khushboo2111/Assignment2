@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+<body>
+    <div class="title">
+    </div>
+    <div class="main">
+        <form id="studentForm" onsubmit="validateForm(); return false;">
+        <div class="firstname">
+            <label for="firstname">First Name</label>
+            <input type="text" placeholder="First Name" id="firstname" >
+        </div>
+        <div class="secondname">
+            <label for="secondname">Second Name</label>
+            <input type="text" placeholder="Second Name" id="lastname" >
+        </div>
+        <div class="age">
+            <label for="age">Age</label>
+            <input type="number" max="110" id="age" placeholder="Age" >
+        </div>
+        <div class="gender">
+            <label for="Gender">Gender</label>
+            <br>
+           <input type="radio" id="male" name="gender" value="male" >
+           <label for="male">Male</label>
+           <br>
+           <input type="radio" id="female" name="gender" value="female" >
+           <label for="female">Female</label>
+        </div>
+        <div class="rollno">
+            <label for="rollno">RollNo</label>
+            <input type="text" id="rollno" ><button id="getDetails" onclick="getStudentDetails()">Get Details</button>
+        </div>
+        <div class="dob">
+            <label for="DOB">DOB</label>
+            <input type="date" id="date">
+        </div>
+        <div class="hobbies">
+            <label for="hobbies">Hobbies</label>
+            <input type="text" id="hobbies" placeholder="Hobbies" >
+        </div>
+        <div class="mobiledevice">
+            <label for="deviceType">Mobile Device</label>
+            <select id="mobiledevice">
+                <option value="iOS">iOS</option>
+                <option value="Android">Android</option>
+            </select>
+        </div>
+        <div class="submit">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
